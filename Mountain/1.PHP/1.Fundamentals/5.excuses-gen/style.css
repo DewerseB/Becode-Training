@@ -1,0 +1,13 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    align-content: center;
+}
+
+p {
+    font: italic 1.2rem cursive;
+}
