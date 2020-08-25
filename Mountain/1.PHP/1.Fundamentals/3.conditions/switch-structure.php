@@ -6,7 +6,7 @@
 
 <?php
     if (isset($_GET['note'])) {
-        $annotation = "Too good to be true : confront the cheater!";
+        //$annotation = "Too good to be true : confront the cheater!";
         switch ($_GET['note']) {
             case 0: case 1: case 2: case 3: case 4:
                 echo "This work is really bad. What a dumb kid!";
