@@ -18,10 +18,10 @@
         //var_dump($pdo->errorinfo());
 
         if ($req) {
-            $table = "<table id='hiking'><tr><th>Nom</th><th>Difficulté</th><th>Distance</th><th>Durée</th><th>Dénivelé</th></tr>";
+            $table = "<table id='hiking'><tr><th>Nom</th><th>Difficulté</th><th>Distance</th><th>Durée</th><th>Dénivelé</th><th>Ouverte</th></tr>";
             while ($row = $req->fetch()) {
-                $table = "{$table}<tr><td>{$row['name']}</td><td>{$row['difficulty']}</td><td>{$row['distance']} km</td><td>" . date('H\hi', strtotime($row['duration'])) . "</td><td>{$row['height_difference']}m</td>";
-                $table = "{$table}<td><a href='update.php?id={$row['id']}&name={$row['name']}&difficulty={$row['difficulty']}&distance={$row['distance']}&duration={$row['duration']}&height_difference={$row['height_difference']}'>update</a></td>";
+                $table = "{$table}<tr><td>{$row['name']}</td><td>{$row['difficulty']}</td><td>{$row['distance']} km</td><td>" . date('H\hi', strtotime($row['duration'])) . "</td><td>{$row['height_difference']}m</td><td>" . (boolval($row['available']) ? 'Oui' : 'Non') . "</td>";
+                $table = "{$table}<td><a href='update.php?id={$row['id']}&name={$row['name']}&difficulty={$row['difficulty']}&distance={$row['distance']}&duration={$row['duration']}&height_difference={$row['height_difference']}&available={$row['available']}'>update</a></td>";
                 $table = "{$table}<td><a href='delete.php?id={$row['id']}'>delete</a></td></tr>";
             }
             $table = "{$table}</table><br>";

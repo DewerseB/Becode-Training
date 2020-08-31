@@ -37,10 +37,17 @@
 			<label for="height_difference">Dénivelé</label>
 			<input type="text" name="height_difference" value="<?php echo isset($_GET['height_difference']) ? $_GET['height_difference'] : ''; ?>">
 		</div>
+		<div>
+			<label for="available">Ouverte</label>
+			<select name="available">
+				<option value="1" <?php echo (isset($_GET['available']) && $_GET['available'] === '1') ? 'selected' : ''; ?>>Oui</option>
+				<option value="0" <?php echo (isset($_GET['available']) && $_GET['available'] === '0') ? 'selected' : ''; ?>>Non</option>
+			</select>
+		</div>
 		<button type="submit" name="button">Envoyer</button>
 		<?php
 
-			if (isset($_POST['name']) && isset($_POST['difficulty']) && isset($_POST['distance']) && isset($_POST['duration']) && isset($_POST['height_difference']) && isset($_GET['id'])) {
+			if (isset($_POST['name']) && isset($_POST['difficulty']) && isset($_POST['distance']) && isset($_POST['duration']) && isset($_POST['height_difference']) && isset($_POST['available']) && isset($_GET['id'])) {
 				try {
 					foreach ($_POST as $index => $value) {
 						switch ($index) {
@@ -60,14 +67,15 @@
 					}
 
 					require './connect.php';
-					$addHiking = "UPDATE hiking SET name = ?, difficulty = ?, distance = ?, duration = ?, height_difference = ? WHERE id = ?;";
+					$addHiking = "UPDATE hiking SET name = ?, difficulty = ?, distance = ?, duration = ?, height_difference = ?, available = ? WHERE id = ?;";
 					$prepAddReq = $pdo->prepare($addHiking);
 					$prepAddReq->bindValue(1, $_POST['name'], PDO::PARAM_STR);
 					$prepAddReq->bindValue(2, $_POST['difficulty'], PDO::PARAM_STR);
 					$prepAddReq->bindValue(3, $_POST['distance'], PDO::PARAM_INT);
 					$prepAddReq->bindValue(4, $_POST['duration'], PDO::PARAM_STR);
 					$prepAddReq->bindValue(5, $_POST['height_difference'], PDO::PARAM_INT);
-					$prepAddReq->bindValue(6, $_GET['id'], PDO::PARAM_INT);
+					$prepAddReq->bindValue(6, $_POST['available'], PDO::PARAM_BOOL);
+					$prepAddReq->bindValue(7, $_GET['id'], PDO::PARAM_INT);
 					$prepAddReq->execute();
 
 					$prepAddReq = NULL;
