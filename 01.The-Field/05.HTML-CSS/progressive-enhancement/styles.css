@@ -1,0 +1,85 @@
+
+body {
+    width: 90%;
+    margin: auto;
+    background-color: radial-gradient(#C8D7E4, #587B9E);
+    background: no-repeat center url(./ressources/neutral-bg.jpg);
+    background-size: cover;
+}
+
+header > blockquote {
+    background-color: lightyellow;
+}
+
+p, ul, table {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: darkslategrey;
+}
+
+blockquote, q {
+    font-style: italic;
+    font-size: 160%;
+    width: 50%;
+    margin: auto;
+    background-color: lightgrey;
+    border-style: none none none solid;
+    border-width: 3px;
+    border-color: firebrick;
+    padding-left: 30px;
+    margin: 80px auto;
+}
+
+tbody > tr:nth-child(odd) {
+    background-color: white;
+}
+
+tbody > tr:nth-child(even), thead > tr {
+    background-color: grey;
+}
+
+q.villagers {
+    border-color: red;
+}
+
+q.farmer {
+    border-color: blue;
+}
+
+span.bien {
+    color: green;
+    text-transform: uppercase;
+}
+
+span.mal {
+    color: red;
+    text-transform: uppercase;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+figure {
+    display: block;
+    margin: auto;
+}
+
+a:link {
+    text-decoration: none;
+    color: darkslategrey;
+    border: 2px solid blue;
+}
+
+a:visited {
+    text-decoration: none;
+    color: darkslategrey;
+    border: 2px solid purple;
+}
+
+a:hover {
+    color: white;
+    background-color: darkslategrey;
+}

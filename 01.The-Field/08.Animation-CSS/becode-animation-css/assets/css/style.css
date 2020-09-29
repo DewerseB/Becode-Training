@@ -1,0 +1,203 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: darkslategrey;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 50%;
+}
+
+button {
+  font-size: 1.5rem;
+  padding: 1rem;
+  color: white;
+  background-color: black;
+  border: 0.2rem solid white;
+  -webkit-transition: color 2s, background-color 2s;
+  transition: color 2s, background-color 2s;
+}
+
+button:hover {
+  color: black;
+  background-color: white;
+}
+
+.grow {
+  -webkit-transition: color 2s, background-color 2s, -webkit-transform 2s;
+  transition: color 2s, background-color 2s, -webkit-transform 2s;
+  transition: color 2s, background-color 2s, transform 2s;
+  transition: color 2s, background-color 2s, transform 2s, -webkit-transform 2s;
+}
+
+.grow:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.move {
+  -webkit-transition: color 2s, background-color 2s, -webkit-transform 2s;
+  transition: color 2s, background-color 2s, -webkit-transform 2s;
+  transition: color 2s, background-color 2s, transform 2s;
+  transition: color 2s, background-color 2s, transform 2s, -webkit-transform 2s;
+}
+
+.move:hover {
+  -webkit-transform: translateX(10rem);
+          transform: translateX(10rem);
+}
+
+div, p {
+  margin: 0;
+  padding: 0;
+}
+
+div.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  height: 30rem;
+  width: 20rem;
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  overflow: hidden;
+  -webkit-box-shadow: 0;
+          box-shadow: 0;
+  -webkit-transition: -webkit-box-shadow 1s;
+  transition: -webkit-box-shadow 1s;
+  transition: box-shadow 1s;
+  transition: box-shadow 1s, -webkit-box-shadow 1s;
+}
+
+div.photo {
+  height: 63%;
+  width: 100%;
+  overflow: hidden;
+  opacity: 1;
+  z-index: 1;
+  -webkit-transition: opacity 1s, -webkit-transform 1s;
+  transition: opacity 1s, -webkit-transform 1s;
+  transition: opacity 1s, transform 1s;
+  transition: opacity 1s, transform 1s, -webkit-transform 1s;
+}
+
+div.photo img {
+  height: auto;
+  width: 100%;
+}
+
+div.title {
+  position: absolute;
+  bottom: 7%;
+  height: 30%;
+  width: 80%;
+  padding: 0 10%;
+  background-color: white;
+  z-index: 2;
+  -webkit-transition: bottom 1s;
+  transition: bottom 1s;
+}
+
+div.title h3 {
+  font-weight: lighter;
+}
+
+div.text {
+  position: absolute;
+  bottom: 7%;
+  height: 0;
+  width: 80%;
+  padding: 0 10%;
+  overflow: hidden;
+  background-color: white;
+  z-index: 2;
+  -webkit-transition: height 1s;
+  transition: height 1s;
+}
+
+div.comments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  height: 7%;
+  width: 100%;
+  background-color: white;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0.2rem 0.2rem 1rem black, -0.2rem -0.2rem 1rem black;
+          box-shadow: 0.2rem 0.2rem 1rem black, -0.2rem -0.2rem 1rem black;
+}
+
+.card:hover > .title {
+  bottom: 40%;
+}
+
+.card:hover > .text {
+  height: 33%;
+}
+
+.card:hover > .photo {
+  opacity: 0.7;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+/*# sourceMappingURL=style.css.map */

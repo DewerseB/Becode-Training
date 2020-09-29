@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Projet Bootstrap</title>
+</head>
+
+<body>
+
+    <div class="text-center">I - Blocs positioning</div>
+
+    <div class="container border border-dark rounded text-center bg-purple">
+        <div class="row">
+            <div class="col"><p>12 colonnes</p></div>
+        </div>
+        <div class="row">
+            <div class="col-2 offset-1 border border-dark rounded">Coucou</div>
+            <div class="col-3 offset-2 border border-dark rounded">ça</div>
+            <div class="col-2 offset-2 border border-dark rounded">va ?</div>
+        </div>
+    </div>
+
+    <div class="text-center">II - Imbricated elements</div>
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-4">
+                <div class="row border border-dark rounded">
+                    <div class="col bg-purple">Nouvel</div>
+                </div>
+            </div>
+            <div class="col-8 border border-dark rounded bg-purple">
+                <div class="row">
+                    <div class="col-12"><b>Exercice</b></div>
+                    <div class="col-3 border border-dark rounded">ces</div>
+                    <div class="col-6 border border-dark rounded">blocs sont tous</div>
+                    <div class="col-3 border border-dark rounded">dans</div>
+                    <div class="col-4 border border-dark rounded">la même</div>
+                    <div class="col-4 border border-dark rounded">div où est</div>
+                    <div class="col-4 border border-dark rounded">inscrit "<b>Exercice</b>"</div>
+                    <div class="col-5 border border-dark rounded">comment</div>
+                    <div class="col-2 border border-dark rounded">est</div>
+                    <div class="col-5 border border-dark rounded">ce possible ?</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center">III - Change elements order</div>
+
+    <div class="container border border-dark rounded text-center bg-purple">
+        <div class="row">
+            <div class="col"><p>12 colonnes</p></div>
+        </div>
+        <div class="row justify-content-around">
+            <div class="col-2 border border-dark rounded order-1">Bloc 1 de 2</div>
+            <div class="col-2 border border-dark rounded order-3">Bloc 2 de 2</div>
+            <div class="col-2 border border-dark rounded order-2">Bloc 3 de 2</div>
+        </div>
+    </div>
+
+    <div class="text-center">IV - Practice makes good</div>
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-6 border border-dark rounded bg-purple">
+                <div class="col-12">6 colonnes</div>
+                <div class="row justify-content-between">
+                    <div class="col-4 border border-dark rounded">4 colonnes</div>
+                    <div class="col-4 border border-dark rounded">4 colonnes</div>
+                </div>
+            </div>
+            <div class="col-6 border border-dark rounded bg-purple">
+                <div class="col-12">6 colonnes</div>
+                <div class="row">
+                    <div class="col-4 border border-dark rounded">4 colonnes</div>
+                    <div class="col-8 border border-dark rounded">4 colonnes</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center">V - Responsive layout</div>
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-4 col-md-3"><p class="border border-dark py-2">Logo</p></div>
+            <div class="col-8 col-md-9"><p class="border border-dark py-2">Titre</p></div>
+            <div class="col-12"><p class="border border-dark py-2">Hero</p></div>
+            <div class="col-12 col-md-4"><p class="border border-dark py-2">Zone 1</p></div>
+            <div class="col-12 col-md-4"><p class="border border-dark py-2">Zone 2</p></div>
+            <div class="col-12 col-md-4"><p class="border border-dark py-2">Zone 3</p></div>
+            <div class="col-8 col-md-6"><p class="border border-dark py-2">Zone 5</p></div>
+            <div class="col-4 col-md-6"><p class="border border-dark py-2">Zone 6</p></div>
+            <div class="col-12"><p class="border border-dark py-2">Footer</div>
+        </div>
+    </div>
+
+</body>
+
+</html>

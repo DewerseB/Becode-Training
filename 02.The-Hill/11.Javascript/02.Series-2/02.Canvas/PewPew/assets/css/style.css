@@ -1,0 +1,36 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    height: 508px;
+    width: 900px;
+    margin: 1rem;
+    border: 0.1rem solid black;
+    z-index: 0;
+    overflow: hidden;
+}
+
+img.background {
+    position: absolute;
+    height: auto;
+    width: 900px;
+    z-index: 1;
+}
+
+.canvas-back {
+    position: absolute;
+    z-index: 10;
+}
+
+.canvas-front {
+    position: absolute;
+    z-index: 11;
+}
+
+.canvas-ui {
+    position: absolute;
+    z-index: 12;
+}

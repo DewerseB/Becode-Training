@@ -1,0 +1,164 @@
+{
+  "heroes": [
+    {
+      "id": 4,
+      "name": "Angel",
+      "alterEgo": "Warren Worthington III",
+      "abilities": [
+        "Flight via feathered wings and hollow bones",
+        "Aerial adaptation",
+        "Enhanced physical prowess"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Iceman",
+      "alterEgo": "Bobby Drake",
+      "abilities": [
+        "Cold and ice manipulation",
+        "Ability to assume an enhanced physical form made of solid ice"
+      ]
+    },
+    {
+      "id": 18
+    },
+    {
+      "id": 19,
+      "name": "",
+      "alterEgo": "",
+      "abilities": [
+        ""
+      ]
+    },
+    {
+      "id": 20,
+      "name": "",
+      "alterEgo": "",
+      "abilities": [
+        ""
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Test",
+      "alterEgo": "TT",
+      "abilities": [
+        "42",
+        "laser"
+      ]
+    },
+    {
+      "id": 22
+    },
+    {
+      "id": 23
+    },
+    {
+      "id": 24
+    },
+    {
+      "id": 25
+    },
+    {
+      "id": 26
+    },
+    {
+      "id": 27,
+      "name": "Bubu",
+      "alterEgo": "Bibi",
+      "abilities": [
+        "Bobo"
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Bubu2",
+      "alterEgo": "Bibi2",
+      "abilities": [
+        "Bobo2"
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Bubu3",
+      "alterEgo": "Bibi3",
+      "abilities": [
+        "Bobo3"
+      ]
+    },
+    {
+      "id": 30
+    },
+    {
+      "id": 31
+    },
+    {
+      "id": 32,
+      "name": "BB",
+      "alterEgo": "TT",
+      "abilities": [
+        "42"
+      ]
+    },
+    {
+      "id": 33,
+      "name": "BB2",
+      "alterEgo": "TT2",
+      "abilities": [
+        "43"
+      ]
+    },
+    {
+      "id": 34,
+      "name": "FF",
+      "alterEgo": "DD",
+      "abilities": [
+        "AZE"
+      ]
+    },
+    {
+      "id": 35,
+      "name": "FF2",
+      "alterEgo": "DD2",
+      "abilities": [
+        "AZE2"
+      ]
+    },
+    {
+      "id": 36,
+      "name": "",
+      "alterEgo": "",
+      "abilities": [
+        ""
+      ]
+    },
+    {
+      "id": 37,
+      "name": "Testt",
+      "alterEgo": "tt",
+      "abilities": [
+        "42"
+      ]
+    },
+    {
+      "id": 38,
+      "name": "",
+      "alterEgo": "",
+      "abilities": []
+    },
+    {
+      "id": 39,
+      "name": "",
+      "alterEgo": "",
+      "abilities": []
+    },
+    {
+      "id": 40,
+      "name": "Test",
+      "alterEgo": "tt",
+      "abilities": [
+        "42"
+      ]
+    }
+  ]
+}
