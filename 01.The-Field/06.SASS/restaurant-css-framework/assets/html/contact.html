@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../fontawesome/css/all.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body class="d-flex flex-column align-items-center ">
+  <header class="fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light border border-dark navtop w-75 mx-auto">
+        <a class="navbar-brand font-weight-bold">O'Burger</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link font-weight-bold" href="../../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link font-weight-bold" href="./menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-weight-bold" href="./restaurant.html">Restaurants</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link font-weight-bold" href="./pictures.html">Pictures</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link font-weight-bold" href="./contact.html">Contact <span class="sr-only">(current)</span></a>
+            </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+  <main class="w-75 text-center">
+  <section class="w-100">
+    <div class="container">
+    <div class="row">
+    <h1 class="col-xs-4 col-sm-4 col-md-12 col-lg-12 font-weight-bold text-uppercase">Formulaire de contact</h1>
+    <h2 class="col-xs-4 col-sm-4 col-md-12 col-lg-12"><small>On ne mord que dans des Burgers, c’est promis !</small></h2>
+    <p class="col-xs-4 col-sm-4 col-md-12 col-lg-12">Vous désirez nous faire part de votre avis ou collaborer à la création d’un Burger démentiel ? Vous voulez envoyer un message à votre restaurant local ? Contactez-nous, nous vous répondrons dans les meilleurs délais.</p>
+   </div>
+    </div>
+        <div class="container">
+        <form class="mx-auto">
+            <div class="form-group font-weight-bold text-left">
+                <label for="validationCustom01">Votre nom:</label>
+                <input type="text" class="form-control" id="validationCustom01" placeholder="Marc" required>
+                <label for="validationCustom01">Votre prénom:</label>
+                <input type="text" class="form-control" id="validationCustom02" placeholder="Dupont" required>
+              <label for="exampleFormControlInput1">Votre adresse e-mail:</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nom@exemple.com">
+            </div>
+            <div class="form-group font-weight-bold text-left">
+              <label for="exampleFormControlSelect1">Votre sujet:</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>Suggestions</option>
+                <option>Presse & marketing</option>
+                <option>Plaintes</option>
+                <option>Collaborations</option>
+                <option>Autres</option>
+              </select>
+            </div>
+            <div class="form-group font-weight-bold text-left">
+              <label for="exampleFormControlSelect2">Choisissez le restaurant concerné:</label>
+              <select multiple class="form-control" id="exampleFormControlSelect2">
+                <option>Bruxelles</option>
+                <option>Charleroi</option>
+                <option>Mons</option>
+                <option>Namur</option>
+              </select>
+            </div>
+            <div class="form-group font-weight-bold text-left">
+              <label for="exampleFormControlTextarea1">Votre message:</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="row">
+            <button class="btn btn-dark font-weight-bold mx-auto " type="submit">ENVOYER</button>
+            </div>
+          </form>
+        </div>
+    </section>
+  </main>
+    <footer class="w-100 page-footer text-center text-light bg-dark">
+      <div class="container text-center text-md-left">
+
+        <div class="d-flex justify-content-between">
+          <div class="mx-auto">
+              <h5 class="font-weight-bold mt-3 mb-4 display-4 text-warning"><i class="fab fa-facebook-f"></i></h5>
+          </div>
+          <div class="mx-auto">
+              <h5 class="font-weight-bold mt-3 mb-4 display-4 text-warning"><i class="fab fa-instagram"></i></h5>
+          </div>
+          <div class="mx-auto">
+              <h5 class="font-weight-bold mt-3 mb-4 display-4 text-warning"><i class="fab fa-twitter"></i></h5>
+          </div>
+      </div>
+      </div>
+      <div class="bg-dark">
+        © 2020 Copyright: BeCode.org
+      </div>
+  </footer>
+</body>
+</html>

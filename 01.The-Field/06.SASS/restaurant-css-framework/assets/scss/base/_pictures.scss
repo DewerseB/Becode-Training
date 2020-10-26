@@ -1,0 +1,29 @@
+// Crop images in the coursel
+section.pictures {
+    height: calc(100vh - 4rem);
+}
+
+.carousel-item {
+    img {
+      width: 100%;
+      height: 80%;
+      object-fit: cover;
+    }
+}
+
+.card-photo {
+    background-color: $color-light;
+    width: 26%;
+    height: 50%;
+    margin: 1%;
+    @media (orientation: portrait) {
+        width: 78%;
+        height: 26%;
+    }
+}
+
+@media (orientation: portrait) {
+    .swap-portrait {
+        flex-direction: column;
+    }
+}

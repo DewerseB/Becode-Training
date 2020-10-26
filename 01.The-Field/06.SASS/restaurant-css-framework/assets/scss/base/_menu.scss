@@ -1,0 +1,64 @@
+img.food {
+    width: auto;
+    height: 20rem;
+    border: 3px solid $color-dark;
+}
+
+p.food{
+    color: $color-light;
+    font-size: 2vh;
+}
+
+h2.food{
+    color: $color-dark;
+    font-size: 3vh;
+}
+h4.food{
+    color: $color-dark;
+    font-size: 2vh;
+}
+
+.debut{
+    margin-top: 7vh;
+}
+
+.bordure{
+    border: 2px solid $color-dark;
+}
+
+.souhait{
+    border: 1px solid $color-dark;
+    padding: 10px;
+}
+
+
+@media screen and (max-width: 900px) {
+    p.food{
+        font-size: 8px;
+    }
+    h1.food{
+        font-size: 20px;
+    }
+    h2.food{
+        font-size: 10px;
+    }
+    h4.food{
+        font-size: 8px;
+    }
+    
+}
+@media screen and (max-width: 700px) {
+    p.food{
+        font-size: 0.5rem;
+    }
+    h1.food{
+        font-size: 1rem;
+    }
+    h2.food{
+        font-size: 0.5rem;
+    }
+    h4.food{
+        font-size: 0.5rem;
+    }
+    
+}

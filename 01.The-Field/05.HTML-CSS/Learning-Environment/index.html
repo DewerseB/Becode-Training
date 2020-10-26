@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Le Markdown</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<header>
+		<h1>Le Markdown</h1>
+	</header>
+
+	<nav>
+		<h2 id="content">Table of Contents</h2>
+		<ul>
+			<li><a href="#content">Table of Contents</a></li>
+			<ul>
+				<li><a href="#markdown">Qu'est-ce que Markdown?</a></li>
+				<li><a href="#syntax">Syntax</a></li>
+				<ul>
+					<li><a href="#header">Header</a></li>
+					<li><a href="#emphasis">Emphasis</a></li>
+					<li><a href="#list">List</a></li>
+					<ul>
+						<li><a href="#ulist">Non ordonnée</a></li>
+						<li><a href="#olist">Ordonnée</a></li>
+					</ul>
+					<li><a href="#image">Image</a></li>
+					<li><a href="#liens">Liens</a></li>
+					<li><a href="#blockquotes">Blockquotes</a></li>
+					<li><a href="#code">Code en ligne</a></li>
+					<li><a href="#tableau">Tableau</a></li>
+					<li><a href="#checklist">Listes de tâches</a></li>
+				</ul>
+				<li><a href="#complementaires">Lectures complémentaires</a></li>
+			</ul>
+		</ul>
+		<aside>
+			<a href="#content">Retour au menu</a>
+		</aside>
+	</nav>
+
+	<main>
+		<article>
+			<h2 id="markdown">Qu'est-ce que Markdown?</h2>
+			<ul>
+				<li>Markdown est un langage de balisage léger avec une syntaxe de formatage de texte brut.</li>
+				<li>Cela signifie qu'en utilisant seulement quelques symboles supplémentaires dans votre texte, Markdown vous aide à créer un document avec une structure explicite.</li>
+				<li>Par exemple, en texte brut, rien n'indique quel texte est en **gras**, en *italic* ou est un lien. Mais avec MarkDown, en utilisant un symbole de certaines manières, vous pouvez.</li>
+			</ul>
+			<p>Ici une liste de <b><i>Syntax</i></b> ce que MarkDown peut faire:</p>
+
+			<h2 id="syntax">Syntax</h2>
+
+			<section id="header">
+				<h3>Header</h3>
+
+				<p><code>#headers</code> is like &lt;h1&gt;headers&lt;/h1&gt;</p>
+				<p><code>##headers</code> is like &lt;h2&gt;headers&lt;/h2&gt;</p>
+				<p><code>####headers</code> is like &lt;h6&gt;headers&lt;/h6&gt;</p>
+			</section>
+
+			<section id="emphasis">
+				<h3>Emphasis</h3>
+				<p><code>*italic*</code> ou <code>_italic_</code> donne <i>italic</i></p>
+				<p><code>**bold**</code> ou <code>__bold__</code> donne <b>bold</b></p>
+				<p>ou combiner les deux</p>
+				<p><code>_**comb**_</code> ou <code>__*comb*__</code> donne <i><b> comb</b></i></p>
+			</section>
+
+			<section id="list">
+				<h3>List</h3>
+
+				<h4 id="ulist">Non ordonnée</h4>
+				<code>* un<br>
+				* deux<br>
+				* trois<br>
+				&nbsp;* un<br>
+				&nbsp;* deux</code><br>
+
+				<ul><li>un</li>
+				<li>deux</li> 
+				<li>trois</li>
+				<ul><li>un</li>
+				<li>deux</li></ul></ul>
+
+				<h4 id="olist">Ordonnée</h4>
+				<code>1. un<br>
+				1. deux<br>
+				1. trois<br>
+				&nbsp;1. un<br>
+				&nbsp;1. deux</code><br>
+
+				<ol><li>un</li>
+				<li>deux</li> 
+				<li>trois</li>
+				<ol><li>un</li>
+				<li>deux</li></ol></ol>
+			</section>
+
+			<section id="image">
+				<h3>Image</h3>
+				<code>![web Dev](./ressources/in-case-of-fire.jpg)</code><br>
+				<img src="./ressources/in-case-of-fire.jpg" alt="web Dev">
+			</section>
+
+			<section id="liens">
+				<h3>Liens</h3>
+				<code>http://github.com - automatic!<br>
+				[GitHub](http://github.com) `[GitHub](http://github.com)</code><br>
+				<a href="http://github.com">http://github.com</a>
+			</section>
+
+			<section id="blockquotes">
+				<h3>Blockquotes</h3>
+				<code>>c'est un texte de test<br>
+				>>encore une fois c'est un texte de test</code><br>
+				<blockquote>c'est un texte de test<br>
+				<q>encore une fois c'est un texte de test</q></blockquote>
+			</section>
+
+			<section id="code">
+				<h3>Code en ligne</h3>
+				<code>Je pense que vous devriez utiliser l'élément `&lt;a&gt;` ici à la place.</code><br>
+				<p>Je pense que vous devriez utiliser l'élément &lt;a&gt; ici à la place.</p>
+			</section>
+
+			<section id="tableau">
+				<h3>Tableau</h3>
+
+				<code>| titre1| titre2| titre3|<br>
+				|-------|:-----:|------:|<br>
+				| col 1 | col 2 | col 3 |<br>
+				| col 1 | col 2 | col 3 |<br>
+				| col 1 | col 2 | col 3 |</code><br>
+
+				<div class="table">
+					<div class="col">
+						<div class="hrow">titre1</div>
+						<div class="row">col 1</div>
+						<div class="row">col 1</div>
+						<div class="row">col 1</div>
+					</div>
+					<div class="col">
+						<div class="hrow">titre2</div>
+						<div class="row">col 2</div>
+						<div class="row">col 2</div>
+						<div class="row">col 2</div>
+					</div>
+					<div class="col">
+						<div class="hrow">titre3</div>
+						<div class="row">col 3</div>
+						<div class="row">col 3</div>
+						<div class="row">col 3</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="checklist">
+				<h3>Listes de tâches</h3>
+
+				<code>
+				- [x] un<br>
+				- [ ] deux<br>
+				- [x] trois
+				</code><br>
+				<div><input type="checkbox" id="un" name="un" checked><label for="un">un</label><br>
+				<input type="checkbox" id="deux" name="deux"><label for="deux">deux</label><br>
+				<input type="checkbox" id="trois" name="trois" checked><label for="trois">trois</label></div>
+			</section>
+
+			<h2 id="complementaires">Lectures complémentaires</h2>
+			<a href="https://github.github.com/gfm/">[GitHub Flavored MarUtilisation du Markdown pour intégrer du code]</a> 
+			<a href="https://help.github.com/en/articles/basic-writing-and-formatting-syntax">[Basic writing and formatting syntax]</a>
+		</article>
+	</main>
+
+</body>
+
+</html>

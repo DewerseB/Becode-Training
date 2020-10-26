@@ -1,0 +1,61 @@
+body, article, section {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+
+body {
+    width: 40%;
+    margin: 0 auto;
+    background-color: #E8E3BA;
+}
+
+section {
+    width: 100%;
+    margin: 40px auto 20px 0;
+}
+
+h1, h2 {
+    margin: 50px auto 25px auto;
+}
+
+h1, h2, img {
+    width: fit-content;
+}
+
+/* Retour au menu */
+aside {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+}
+
+/* Code style */
+code {
+    background-color: #fffacd;
+    width: fit-content;
+    padding: 5px;
+    border-left: 3px solid grey;
+}
+
+/* Table style */
+div.table {
+    display: flex;
+}
+
+div.col {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-top: 0;
+    border-bottom: 0;
+    margin-left: -1px;
+}
+
+div.hrow, div.row {
+    padding: 10px;
+}
+
+div.hrow {
+    border-bottom: 1px solid black;
+}

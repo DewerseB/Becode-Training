@@ -1,0 +1,85 @@
+.jumtitle {
+    font-size: 4rem;
+}
+
+.jumtext {
+    padding-top: 80px;
+    font-size: 2rem;
+}
+
+.bg-photo {
+    background: center url("../img/jumbo2.jpg");
+    background-size: cover;
+}
+
+.article-color {
+    background-color: $color-light;
+}
+
+.cardfoot {
+    background-color: $color-light;
+}
+
+.cartop {
+    height: 500px;
+    width: 100%;
+}
+
+
+.mtitle {
+    padding-top: 10px;
+}
+
+.mtext {
+    text-align: justify;
+    color: $font-color;
+}
+
+.ctitle {
+    text-align: center;
+    padding-top: 2px;
+}
+
+.card-ti {
+    text-align: center;
+}
+
+.expall {
+    background-color: $color-light;
+}
+
+.exptitle {
+    color: $font-color;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.exptext {
+    color: $font-color;
+}
+
+.mimg {
+    margin-top: 15px;
+}
+
+.card-bee {
+    text-align: center;
+}
+
+
+.board-color {
+    background-color: $color-light;
+    text-align: center;
+}
+
+.board-color2 {
+    text-align: center;
+}
+
+#bcolor2 {
+    border: 3px solid $color-light;
+}
+
+.bcard {
+    margin-bottom: 40px;
+}

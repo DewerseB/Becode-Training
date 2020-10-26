@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 6rem;
+    text-align: justify;
+    background-image: url("./assets/star-wars-bg.jpg");
+}
+
+article {
+    height: 95%;
+    overflow: hidden;
+    margin-top: 5%;
+    perspective: 25rem;
+}
+
+p {
+    padding: 1rem 0;
+}
+
+section.fade {
+    position: absolute;
+    top: 35%;
+    color: blue;
+    opacity: 0;
+}
+
+section.fadeAnim {
+    position: absolute;
+    top: 35%;
+    color: blue;
+    opacity: 0;
+    animation: fade 5s linear;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+section.logo {
+    position: absolute;
+    visibility: hidden;
+}
+
+section.logoAnim {
+    position: absolute;
+    visibility: hidden;
+    animation: logo 9s linear;
+    animation-delay: 5s;
+}
+
+@keyframes logo {
+    0% {
+        transform: translate3d(0, 0, 5rem);
+        visibility: visible;
+    }
+    100% {
+        transform: translate3d(0, 0, -800rem);
+        visibility: visible;
+    }
+}
+
+section.crawl {
+    margin: 0 auto;
+    width: 100%;
+    color: #feda4a;
+    visibility: hidden;
+}
+
+section.crawlAnim {
+    margin: 0 auto;
+    width: 100%;
+    color: #feda4a;
+    visibility: hidden;
+    animation: crawl 60s linear;
+    animation-delay: 11s;
+}
+
+@keyframes crawl {
+    0% {
+        transform: rotate3d(1, 0, 0, 37deg) translate3d(0, 60rem, 40rem);
+        visibility: visible;
+    }
+    100% {
+        transform: rotate3d(1, 0, 0, 37deg) translate3d(0, -500rem, 40rem);
+        visibility: visible;
+    }
+}

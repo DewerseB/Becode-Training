@@ -13,7 +13,17 @@ app.use(bodyParser.json());
 require("./models/Pet")(app);
 require("./routes/petRoutes")(app);
 
+try {
 mongoose.connect("mongodb+srv://username:123password@cluster0.2sv4t.gcp.mongodb.net/node-training?retryWrites=true&w=majority");
+} catch (e) {
+  console.log(e);
+}
+
+// const db = mongoose.connection;
+// db.on('error', console.error.bind(console, 'connection error:'));
+// db.once('open', function() {
+//   console.log("we're connected!");
+// });
 
 // choose what port on which to run the server
 const PORT = 5000;

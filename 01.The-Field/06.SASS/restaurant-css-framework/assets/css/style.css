@@ -1,0 +1,214 @@
+body {
+  background-color: #FF8C04;
+}
+
+section {
+  padding-top: 4rem;
+}
+
+footer {
+  margin-top: 4rem;
+}
+
+.jumtitle {
+  font-size: 4rem;
+}
+
+.jumtext {
+  padding-top: 80px;
+  font-size: 2rem;
+}
+
+.bg-photo {
+  background: center url("../img/jumbo2.jpg");
+  background-size: cover;
+}
+
+.article-color {
+  background-color: #FFB255;
+}
+
+.cardfoot {
+  background-color: #FFB255;
+}
+
+.cartop {
+  height: 500px;
+  width: 100%;
+}
+
+.mtitle {
+  padding-top: 10px;
+}
+
+.mtext {
+  text-align: justify;
+  color: #000000;
+}
+
+.ctitle {
+  text-align: center;
+  padding-top: 2px;
+}
+
+.card-ti {
+  text-align: center;
+}
+
+.expall {
+  background-color: #FFB255;
+}
+
+.exptitle {
+  color: #000000;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.exptext {
+  color: #000000;
+}
+
+.mimg {
+  margin-top: 15px;
+}
+
+.card-bee {
+  text-align: center;
+}
+
+.board-color {
+  background-color: #FFB255;
+  text-align: center;
+}
+
+.board-color2 {
+  text-align: center;
+}
+
+#bcolor2 {
+  border: 3px solid #FFB255;
+}
+
+.bcard {
+  margin-bottom: 40px;
+}
+
+img.food {
+  width: auto;
+  height: 20rem;
+  border: 3px solid #FF8C04;
+}
+
+p.food {
+  color: #FFB255;
+  font-size: 2vh;
+}
+
+h2.food {
+  color: #FF8C04;
+  font-size: 3vh;
+}
+
+h4.food {
+  color: #FF8C04;
+  font-size: 2vh;
+}
+
+.debut {
+  margin-top: 7vh;
+}
+
+.bordure {
+  border: 2px solid #FF8C04;
+}
+
+.souhait {
+  border: 1px solid #FF8C04;
+  padding: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  p.food {
+    font-size: 8px;
+  }
+  h1.food {
+    font-size: 20px;
+  }
+  h2.food {
+    font-size: 10px;
+  }
+  h4.food {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  p.food {
+    font-size: 0.5rem;
+  }
+  h1.food {
+    font-size: 1rem;
+  }
+  h2.food {
+    font-size: 0.5rem;
+  }
+  h4.food {
+    font-size: 0.5rem;
+  }
+}
+
+section.pictures {
+  height: calc(100vh - 4rem);
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-photo {
+  background-color: #FFB255;
+  width: 26%;
+  height: 50%;
+  margin: 1%;
+}
+
+@media (orientation: portrait) {
+  .card-photo {
+    width: 78%;
+    height: 26%;
+  }
+}
+
+@media (orientation: portrait) {
+  .swap-portrait {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+body {
+  background-color: #FF8C04;
+}
+
+section {
+  padding-top: 4rem;
+}
+
+footer {
+  margin-top: 4rem;
+}
+
+.card-resto {
+  background-color: #FFB255;
+}
+
+.navtop {
+  background-color: #FF8C04;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,108 @@
+
+article, section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5rem;
+    background: rgb(235,230,211);
+    background: linear-gradient(0deg, rgba(235,230,211,1) 0%, rgba(236,245,220,1) 50%, rgba(235,230,211,1) 100%);
+}
+
+article {
+    height: 100vh;
+}
+
+h1 {
+    height: 10%;
+}
+
+div.flexrow {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+section {
+    width: 20%;
+    height: 100%;
+}
+
+section.sorry {
+    justify-content: center;
+}
+
+img {
+    width: 20.16rem;
+    height: 26.88rem;
+    border: 0.1rem solid black;
+    border-radius: 1rem;
+}
+
+a.button {
+    text-decoration: none;
+    background-color: rgb(235,230,211);
+    color: black;
+    width: 60%;
+    padding: 0.5rem 0;
+    border: 0.1rem solid black;
+    border-radius: 0.7rem;
+}
+
+a.button:hover {
+    background-color: black;
+    color: rgb(235,230,211);
+}
+
+/* Flip animation */
+.card {
+    background-color: transparent;
+    width: 20.16rem;
+    height: 26.88rem;
+    perspective: 100rem;
+}
+
+.flipleft, .flipright {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.card:hover .flipleft {
+    transform: rotateY(-180deg);
+}
+
+.card:hover .flipright {
+    transform: rotateY(180deg);
+}
+
+.frontcard, .backcard {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.backcard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 0.1rem solid black;
+    border-radius: 1rem;
+    background-color: #dddddb;
+    transform: rotateY(180deg);
+}
+
+.backcard p {
+    width: 80%;
+}
